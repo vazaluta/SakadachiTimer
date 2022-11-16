@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PxN-BN-MTC">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iJY-eb-wrB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PxN-BN-MTC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PiN-NR-qUk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemCyanColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.54509803921568623" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qzC-3U-JdK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdd-R2-snV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-20"/>
+        </scene>
+        <!--逆立ちタイマー-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's 逆立ち！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-Yh-lRl">
+                                <rect key="frame" x="91.666666666666686" y="113.00000000000001" width="210" height="39.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wV-T4-xoA" customClass="CustomLabel" customModule="sample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="520.33333333333337" width="353" height="182.66666666666663"/>
+                                <string key="text">①iPhoneをジッパー付きのポケットに入れる。(立っている時にiphoneが上を向いている状態でセットできればOK)
+
+②下の「スタート！」を押す。
+
+③逆立ちをする。 
+ iPhoneの向きを検知しタイマーが開始する。</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="sakadachi" translatesAutoresizingMaskIntoConstraints="NO" id="xmc-ov-7XT">
+                                <rect key="frame" x="42.666666666666657" y="152.66666666666666" width="308" height="347.66666666666674"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hch-T8-mtp">
+                                <rect key="frame" x="141" y="733" width="111" height="35"/>
+                                <color key="backgroundColor" white="0.80475286670000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="zGZ-jp-7p6"/>
+                                </constraints>
+                                <color key="tintColor" red="0.1049030498" green="0.26179820300000001" blue="0.280762136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="スタート！"/>
+                                <connections>
+                                    <segue destination="Nep-Ya-zKF" kind="show" id="MLf-85-pEi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.896503746509552" green="0.93449229001998901" blue="0.73357558250427246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hch-T8-mtp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cde-7F-ogS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hch-T8-mtp" secondAttribute="bottom" constant="50" id="MXS-lj-CsZ"/>
+                            <constraint firstItem="xmc-ov-7XT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pbw-vi-hYo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3wV-T4-xoA" secondAttribute="trailing" constant="20" id="VZt-Ky-B5H"/>
+                            <constraint firstItem="3wV-T4-xoA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y10-Dv-Ptr"/>
+                            <constraint firstItem="HGx-Yh-lRl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Z8u-Aw-dLV"/>
+                            <constraint firstItem="Hch-T8-mtp" firstAttribute="top" secondItem="3wV-T4-xoA" secondAttribute="bottom" constant="30" id="edh-Us-bhx"/>
+                            <constraint firstItem="HGx-Yh-lRl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hwG-Ph-phe"/>
+                            <constraint firstItem="xmc-ov-7XT" firstAttribute="bottom" secondItem="3wV-T4-xoA" secondAttribute="top" constant="-20" id="iAX-mA-zYB"/>
+                            <constraint firstItem="xmc-ov-7XT" firstAttribute="top" secondItem="HGx-Yh-lRl" secondAttribute="bottom" id="kJO-fP-yqH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="逆立ちタイマー" id="WZG-lu-f0M"/>
+                    <connections>
+                        <outlet property="customLabel" destination="3wV-T4-xoA" id="n0a-Zb-YjJ"/>
+                        <outlet property="startButton" destination="Hch-T8-mtp" id="deM-v7-ICr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.79439252336442" y="-21.382289416846653"/>
+        </scene>
+        <!--iphoneが逆さまになると計測開始-->
+        <scene sceneID="wcg-B2-6NS">
+            <objects>
+                <tableViewController id="Nep-Ya-zKF" customClass="RecordViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tda-AP-w6b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.896503746509552" green="0.93449229001998901" blue="0.73357558250427246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecordTempCell" id="1A7-4S-qkC">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1A7-4S-qkC" id="hPT-uM-Hes">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.94458550214767456" green="0.92272818088531494" blue="0.79483240842819214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94636935" green="0.92232137920000001" blue="0.79517036679999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nep-Ya-zKF" id="WRx-Zl-eAg"/>
+                            <outlet property="delegate" destination="Nep-Ya-zKF" id="1El-1z-bAl"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="iphoneが逆さまになると計測開始" id="PFe-A7-7us">
+                        <barButtonItem key="rightBarButtonItem" image="trash" catalog="system" id="yqC-fT-mJz">
+                            <connections>
+                                <action selector="trashItems:" destination="Nep-Ya-zKF" id="fXC-oh-3sq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIh-gp-Fg8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645" y="-20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sakadachi" width="308" height="450"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
