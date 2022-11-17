@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVR-SQ-etQ">
-                                <rect key="frame" x="59" y="50" width="202.5" height="86"/>
-                                <string key="text">逆立つ
-SAKADATSU</string>
+                                <rect key="frame" x="62" y="50" width="196" height="86"/>
+                                <string key="text">SAKADACHI
+TIMER</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.19506654143333435" green="0.32172223925590515" blue="0.26285690069198608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

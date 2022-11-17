@@ -123,8 +123,8 @@
 		F7BBA9322923F0ED00D46436 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F7BBA9332923F0ED00D46436 /* RecordViewController.swift */,
 				F7BBA9342923F0ED00D46436 /* RootVIewController.swift */,
+				F7BBA9332923F0ED00D46436 /* RecordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

@@ -92,9 +92,9 @@ class RecordViewController: UITableViewController {
             
         } else {
             if let item = recordItem?[indexPath.row] {
-                dateFormatter.dateFormat = "HH時mm分ss秒" // 時間の表記を設定
+                dateFormatter.dateFormat = "yyyy/MM/dd-HH:mm" // 時間の表記を設定
                 let str = dateFormatter.string(from: item.dateCreated!) // 変換
-                cell.textLabel?.text = "score: \(item.time)秒  |  time: \(String(describing: str))"
+                cell.textLabel?.text = "score: \(item.time)秒 (\(String(describing: str)))"
                 cell.accessoryType = item.done ? .checkmark : .none // checkmark_ON/OFF
             }
         }

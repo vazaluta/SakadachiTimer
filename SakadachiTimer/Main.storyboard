@@ -34,21 +34,21 @@
             </objects>
             <point key="canvasLocation" x="131" y="-20"/>
         </scene>
-        <!--逆立ちタイマー-->
+        <!--SAKADACHI TIMER-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="SakadachiTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's 逆立ち！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-Yh-lRl">
-                                <rect key="frame" x="91.666666666666686" y="113.00000000000001" width="210" height="39.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's, 逆立ち !!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGx-Yh-lRl">
+                                <rect key="frame" x="92.666666666666686" y="113.00000000000001" width="208" height="39.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wV-T4-xoA" customClass="CustomLabel" customModule="sample" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wV-T4-xoA" customClass="CustomLabel" customModule="SakadachiTimer" customModuleProvider="target">
                                 <rect key="frame" x="20" y="520.33333333333337" width="353" height="182.66666666666663"/>
                                 <string key="text">①iPhoneをジッパー付きのポケットに入れる。(立っている時にiphoneが上を向いている状態でセットできればOK)
 
@@ -92,7 +92,7 @@
                             <constraint firstItem="xmc-ov-7XT" firstAttribute="top" secondItem="HGx-Yh-lRl" secondAttribute="bottom" id="kJO-fP-yqH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="逆立ちタイマー" id="WZG-lu-f0M"/>
+                    <navigationItem key="navigationItem" title="SAKADACHI TIMER" id="WZG-lu-f0M"/>
                     <connections>
                         <outlet property="customLabel" destination="3wV-T4-xoA" id="n0a-Zb-YjJ"/>
                         <outlet property="startButton" destination="Hch-T8-mtp" id="deM-v7-ICr"/>
@@ -105,7 +105,7 @@
         <!--iphoneが逆さまになると計測開始-->
         <scene sceneID="wcg-B2-6NS">
             <objects>
-                <tableViewController id="Nep-Ya-zKF" customClass="RecordViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Nep-Ya-zKF" customClass="RecordViewController" customModule="SakadachiTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tda-AP-w6b">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
